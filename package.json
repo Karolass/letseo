@@ -1,0 +1,25 @@
+{
+  "name": "letseo",
+  "version": "0.1.0",
+  "description": "Search SEO defects from HTML files",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Karolass/letseo.git"
+  },
+  "bin": {
+    "letseo": "./bin/letseo"
+  },
+  "keywords": [
+    "seo",
+    "html"
+  ],
+  "author": "Karolass",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2"
+  }
+}
