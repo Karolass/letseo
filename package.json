@@ -1,6 +1,6 @@
 {
   "name": "letseo",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Search SEO defects from HTML files",
   "main": "index.js",
   "scripts": {
@@ -9,9 +9,6 @@
   "repository": {
     "type": "git",
     "url": "git://github.com/Karolass/letseo.git"
-  },
-  "bin": {
-    "letseo": "./bin/letseo"
   },
   "keywords": [
     "seo",
