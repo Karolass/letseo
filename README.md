@@ -17,6 +17,7 @@ const options = {
     input: 'test.html',
     output: 'test.txt'
   },
+  print: true,  // default: true
   default: {
     img: true, // default: true
     a: true, // default: true
@@ -26,7 +27,7 @@ const options = {
     strong: 5, // default: 15
     h1: 2 // default: 1
   },
-  
+
   // Customize rules
   rules: [
     { tag: 'video' }, // tag is exist or not
