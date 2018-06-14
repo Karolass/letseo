@@ -1,6 +1,6 @@
 {
   "name": "letseo",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "Search SEO defects from HTML files",
   "main": "index.js",
   "scripts": {

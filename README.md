@@ -7,16 +7,14 @@ Search SEO defects from HTML files
 npm install letseo
 ```
 
-## Usage
+## Default Usage
 
 ```javascript
 const letseo = require('letseo')
 
 const options = {
-  file: {
-    input: 'test.html',
-    output: 'test.txt'
-  },
+  input: 'test.html', // HTML file path
+  output: 'test.txt', // result output path
   print: true,  // default: true
   default: {
     img: true, // default: true
@@ -37,4 +35,17 @@ const options = {
 }
 
 letseo(options)
+```
+
+## Node Stream Usage
+
+```javascript
+const letseo = require('./index')
+const fs = require('fs')
+
+const options = { ... } // remove input and output
+
+fs.createReadStream('test.html')
+  .pipe(letseo(options))
+  .pipe(fs.createWriteStream('test.txt'))
 ```
