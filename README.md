@@ -16,6 +16,8 @@ const options = {
   input: 'test.html', // HTML file path
   output: 'test.txt', // result output path
   print: true,  // default: true
+  
+  // default rules
   default: {
     img: true, // default: true
     a: true, // default: true
@@ -28,9 +30,15 @@ const options = {
 
   // Customize rules
   rules: [
-    { tag: 'video' }, // tag is exist or not
-    { tag: 'h2', limit: { type: 'upper', count: 2 }}, // tag is more than specific count
-    { tag: 'meta', attr: { name: 'property', value: 'og:url' }} // attribute value of tag is exist or not
+    // tag is exist or not
+    { tag: 'video' },
+    
+    // tag is more than specific count
+    { tag: 'h2', limit: { type: 'upper', count: 2 }},
+    
+    // attribute value of tag is exist or not
+    { tag: 'meta', attr: { name: 'property', value: 'og:url' }},
+    { tag: 'meta', attr: { name: 'name', value: 'robots' }}
   ]
 }
 
