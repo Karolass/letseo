@@ -11,6 +11,17 @@ npm install letseo
 
 ```javascript
 const letseo = require('letseo')
+const options = {
+  input: 'test.html'
+}
+
+letseo(options)
+```
+
+## Custom options
+
+```javascript
+const letseo = require('letseo')
 
 const options = {
   input: 'test.html', // HTML file path
