@@ -51,7 +51,12 @@ letseo(options)
 const letseo = require('./index')
 const fs = require('fs')
 
-const options = { ... } // remove input and output
+const options = {
+  // remove input and output
+  print: true,
+  default: { ... }
+  rules: [ ... ]
+}
 
 fs.createReadStream('test.html')
   .pipe(letseo(options))
